@@ -1,0 +1,96 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderDate": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "object",
+      "properties": {
+        "O": {
+          "type": "string"
+        },
+        "K": {
+          "type": "string"
+        },
+        "P": {
+          "type": "string"
+        },
+        "H": {
+          "type": "string"
+        },
+        "M": {
+          "type": "string"
+        },
+        "T": {
+          "type": "string"
+        },
+        "C": {
+          "type": "string"
+        },
+        "X": {
+          "type": "string"
+        },
+        "B": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "O",
+        "K",
+        "P",
+        "H",
+        "M",
+        "T",
+        "C",
+        "X",
+        "B"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "level1": {
+              "type": "string"
+            },
+            "level2": {
+              "type": ["string", "null"]
+            },
+            "level3": {
+              "type": ["string", "null"]
+            },
+            "level4": {
+              "type": ["string", "null"]
+            },
+            "level5": {
+              "type": ["string", "null"]
+            },
+            "category": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "level1",
+            "category",
+            "name"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "orderDate",
+    "categories",
+    "items"
+  ]
+}
+
